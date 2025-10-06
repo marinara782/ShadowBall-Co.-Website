@@ -276,3 +276,62 @@ details p {
     /* Helps not mess up the container once it is collapsed */
    padding: 0 2em 2em 2em; 
 }
+
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries, gonna help us make sure it looks nice on different devices */
+@media(max-width: 988px){
+    header {
+        text-align: center;
+    }
+
+    header .text-container {
+        padding-top: 0;
+    }
+}
+/* How website would look on phones */
+@media(max-width: 640px) {
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .cta-button {
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container p{
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
