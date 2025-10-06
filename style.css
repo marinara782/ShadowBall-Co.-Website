@@ -280,6 +280,7 @@ details p {
 footer {
     padding-bottom: 1.5em;
     text-align: center;
+    font-size: 1rem;
 }
 
 footer a {
