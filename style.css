@@ -233,3 +233,28 @@ section p {
   margin: 0 0.75em;
   font-size: 1.2em;
 }
+
+/* Grid container for the multiple pictures */
+.grid-container {
+    margin-top: 3em; /* Gives our gallery breathing room */
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%; /*Lets it stretch out the full length of the section */
+    grid-template-columns: repeat(4,1fr); /* Defines how many columns you want */
+    grid-template-rows: 1fr 1fr;
+    /* Arranges the images towards our liking */
+    grid-template-areas: 
+    "img-5 img-5 img-1 img-2"
+    "img-5 img-5 img-3 img-4";
+}
+
+.grid-container img {
+    height: 90%;
+    width: 90%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05; /* Makes it pop out as you hover */
+}
