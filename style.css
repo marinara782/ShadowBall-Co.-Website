@@ -287,6 +287,7 @@ footer a {
     margin: 0 1em;
     text-decoration: none;
     color: var(--primary-color);
+    font-weight: bold;
 }
 
 footer a:hover {

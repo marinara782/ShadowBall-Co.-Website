@@ -201,3 +201,71 @@ header, section  {
     font-weight: bold;
     margin-bottom: 0.5em;
 }
+
+/* Decide if we want the little box or not */
+
+/*
+.socials-section {
+    background-color: #DDA0DD;
+    color: #705160;
+    display: flex;               
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+    margin: 2em auto;
+    max-width: 900px;
+    border-radius: 2em;
+}
+*/
+
+.social-text {
+    flex: 1;                       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social-text a {
+    color: var(--text-color);
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.insta-link:hover {
+    text-decoration: underline;
+}
+
+.tiktok-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer of the page may add more later */
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
